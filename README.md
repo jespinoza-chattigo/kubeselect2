@@ -1,1 +1,59 @@
-# kubeselect2
+
+# Kubeselect
+
+`kubeselect` es un script de shell que permite seleccionar rápidamente el contexto de Kubernetes de manera interactiva utilizando `fzf` para mejorar la experiencia en la terminal. Este script facilita la gestión de múltiples clústeres de Kubernetes, permitiéndote cambiar de contexto con solo unas pocas teclas.
+
+## Características
+
+- Listado de todos los contextos configurados en Kubernetes.
+- Selección interactiva del contexto usando el selector `fzf`.
+- Cambio automático al contexto seleccionado.
+- Funciona sin la extensión `.sh` y puede instalarse como un comando global.
+
+## Requisitos previos
+
+- **Kubernetes CLI (`kubectl`)**: Asegúrate de tener `kubectl` instalado y configurado.
+- **fzf**: El script utiliza `fzf` para la selección interactiva de contextos. Instálalo con:
+
+  ```bash
+  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+  ~/.fzf/install
+  ```
+
+## Instalación
+
+1. **Clonar el repositorio**:
+
+    ```bash
+    git clone https://github.com/tuusuario/kubeselect.git
+    ```
+
+2. **Mover el script a `/usr/local/bin` para que sea accesible globalmente**:
+
+    ```bash
+    sudo mv kubeselect /usr/local/bin/
+    ```
+
+3. **Hacerlo ejecutable**:
+
+    ```bash
+    sudo chmod +x /usr/local/bin/kubeselect
+    ```
+
+## Uso
+
+Una vez instalado, puedes ejecutar `kubeselect` desde cualquier lugar en la terminal para seleccionar un contexto de Kubernetes:
+
+```bash
+kubeselect
+```
+
+El script listará los contextos disponibles y te permitirá seleccionar uno usando las teclas de dirección y `Enter`.
+
+## Contribuciones
+
+Si deseas contribuir al proyecto, siéntete libre de abrir un **Pull Request** o reportar un **Issue**.
+
+## Licencia
+
+Este proyecto está licenciado bajo la [MIT License](LICENSE).
