@@ -3,6 +3,8 @@
 
 `kubeselect` es un script de shell que permite seleccionar rápidamente el contexto de Kubernetes de manera interactiva utilizando `fzf` para mejorar la experiencia en la terminal. Este script facilita la gestión de múltiples clústeres de Kubernetes, permitiéndote cambiar de contexto con solo unas pocas teclas.
 
+Este proyecto toma inspiración y fue basado en el script `kubeselect` original, donde se utilizó la lógica para mejorar la funcionalidad y añadir nuevas características. Puedes encontrar el proyecto original en [kubeselect original](https://github.com/jbn/kubeselect).
+
 ## Características
 
 - Listado de todos los contextos configurados en Kubernetes.
