@@ -55,7 +55,3 @@ El script listará los contextos disponibles y te permitirá seleccionar uno usa
 ## Contribuciones
 
 Si deseas contribuir al proyecto, siéntete libre de abrir un **Pull Request** o reportar un **Issue**.
-
-## Licencia
-
-Este proyecto está licenciado bajo la [MIT License](LICENSE).
