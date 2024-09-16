@@ -3,7 +3,6 @@
 # List contexts and sort them in natural order
 contexts=$(kubectl config get-contexts -o name | sort -V)
 
-# Use fzf to select context without showing "7/7" at the bottom
 selected_context=$(echo "$contexts" | fzf --height 10 --no-info --prompt="Select Kubernetes context: ")
 
 # Change context
